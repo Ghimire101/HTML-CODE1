@@ -1,0 +1,355 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.header {
+    width: 100%;
+    background: #ffffff;
+    padding: 18px 0;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.container {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Logo */
+
+      .logo img{
+            height: 40px;
+        
+            align-items: center;
+            justify-content: center;
+            
+        }
+
+/* Navbar */
+.navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 28px;
+}
+
+.navbar ul li {
+    position: relative;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: #555;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.navbar ul li a:hover,
+.navbar ul li a.active {
+    color: #1e90ff;
+}
+
+/* Make parent relative */
+.dropdown {
+    position: relative;
+}
+
+/* Hide dropdown by default */
+.dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: #ffffff;
+    min-width: 220px;
+    padding: 10px 0;
+    list-style: none;
+    
+    display: none;   /* IMPORTANT */
+    
+    border-radius: 8px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+    z-index: 1000;
+
+}
+.dropdown-menu li {
+    padding: 0;
+}
+.dropdown-menu li a:hover {
+    background: #f0f0f0;
+    color: #1e90ff;
+}
+
+/* Show dropdown when hovering */
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.dropdown-menu li a {
+    display: block;
+    padding: 10px 20px;
+    color: #555;
+    font-weight: 500;
+    transition: 0.3s;
+}
+ul.hidden {
+    display: none;
+}
+
+/* Right Section */
+.right-section {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.phone {
+    color: #333;
+    font-weight: 500;
+}
+
+.phone i {
+    margin-right: 6px;
+    color: #1e90ff;
+}
+
+/* Register Button */
+.register-btn {
+    background: #1e90ff;
+    color: white;
+    border: none;
+    padding: 10px 22px;
+    border-radius: 8px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.register-btn:hover {
+    background: #eb8d09;
+}
+/* Hero Section */
+
+.picture {
+    width: 120px;
+    height: 60px;
+    border-radius: 20px;
+    margin-top: 30px;
+    position: relative;
+    top : 100px;
+    left: 800px;
+}
+.box {
+    border-radius: 20px;
+    background: #99b5d1;
+    border: orange 2px solid; 
+    position: absolute;
+    top: 230px;
+    left: 700px;
+    padding: 10px 40px;
+
+}
+.box2 {
+    border-radius: 20px;
+    background: #99b5d1;
+    border: orange 2px solid; 
+    position: absolute;
+    top: 150px;
+    left: 1300px;
+    
+    padding: 25px 5px;
+    
+}
+.box3 {
+    border-radius: 20px;
+    background: #99b5d1;
+    border: orange 2px solid; 
+    position: absolute;
+    top: 500px;
+    left: 1200px;
+    
+    padding: 20px 5px;
+}
+.h1
+{
+    padding: auto;
+    position: absolute;
+    top: 170px;
+    right: 700px;
+    font-size: 40px;
+    color: #e0650e;
+    font-size: 40px;
+   
+}
+.paragraph {
+    position: absolute;
+    top: 400px;
+    left: 100px;
+    width: 500px;
+    font-size: 18px;
+    color: #333;
+    line-height: 1.6;
+    display: flex;
+    text-align: center;
+}
+.button1 {
+    position: absolute;
+    top: 800px;
+    left: 100px;
+   
+   
+}
+.button2 {
+    position: absolute;
+    top: 800px;
+    left: 200px;
+    
+}
+
+
+.button1:hover, .button2:hover {
+    background: #0cd52a;
+    border-radius: 45px;
+    size: 20px;
+    border-color: #e0650e;
+}
+
+.footer {
+    background: #333;
+    color: white;
+    padding: 50px 0;
+    text-align: center;
+    display: flex;
+    position: absolute;
+    top: 900px;
+}
+.logo2 img {
+    height: 40px;
+}
+
+
+.footer{
+    background:#000;
+    color:#fff;
+    padding:60px 80px 20px;
+}
+
+.footer-container{
+    display:flex;
+    justify-content:space-between;
+    flex-wrap:wrap;
+}
+
+.footer-col{
+    width:23%;
+    min-width:250px;
+    margin-bottom:30px;
+}
+
+.logo{
+    font-size:28px;
+    margin-bottom:15px;
+}
+
+.logo span{
+    background:#fff;
+    color:#000;
+    padding:5px 10px;
+    margin-right:5px;
+}
+
+.footer-col p{
+    font-size:14px;
+    line-height:1.6;
+    margin-bottom:15px;
+}
+
+.footer-col h3{
+    margin-bottom:20px;
+    font-size:20px;
+}
+
+.footer-col ul{
+    list-style:none;
+}
+
+.footer-col ul li{
+    margin-bottom:10px;
+}
+
+.footer-col ul li a{
+    color:#ccc;
+    text-decoration:none;
+    transition:0.3s;
+}
+
+.footer-col ul li a:hover{
+    color:#1da1f2;
+}
+
+.social-icons a{
+    display:inline-block;
+    width:35px;
+    height:35px;
+    background:#222;
+    color:#fff;
+    text-align:center;
+    line-height:35px;
+    border-radius:50%;
+    margin-right:8px;
+    transition:0.3s;
+}
+
+.social-icons a:hover{
+    background:#94b4c9;
+}
+
+form input{
+    width:100%;
+    padding:12px;
+    border:none;
+    border-radius:8px;
+    margin-bottom:15px;
+    font-size:14px;
+}
+
+form button{
+    width:100%;
+    padding:12px;
+    border:none;
+    border-radius:8px;
+    background:#0d6efd;
+    color:#fff;
+    font-size:16px;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+form button:hover{
+    background:#0b5ed7;
+}
+
+.footer-bottom{
+    text-align:center;
+    border-top:1px solid #333;
+    padding-top:15px;
+    font-size:14px;
+    color:#aaa;
+}
+
+/* Responsive */
+@media(max-width:900px){
+    .footer-container{
+        flex-direction:column;
+    }
+    .footer-col{
+        width:100%;
+    }
+}
+    
